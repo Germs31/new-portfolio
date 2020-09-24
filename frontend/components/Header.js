@@ -15,7 +15,7 @@ const Header = () => {
                 <p>German Nunez</p>
             </div>
             <nav className={styles.nav}>
-                <ul>
+                <ul >
                     <Link href="/blog">
                         <a>Blog</a>
                     </Link>
@@ -30,6 +30,7 @@ const Header = () => {
                     </Link>
                 </ul>
             </nav>
+            
             <div onClick={navbarOpen} className={styles.hamburgerContainer}>
                 <div className={styles.hamburger}/>
                 <div className={styles.hamburger}/>
@@ -43,7 +44,7 @@ const Header = () => {
 
 const MobileOverLay = ({openNav}) => {
     return (
-        <div className={openNav ? styles.mobileOverlay : null}>
+        <div className={openNav ? styles.mobileOverlay : styles.none}>
             <ul>
                 <Link href="/blog">
                     <a>Blog</a>

@@ -34,16 +34,19 @@
 }
 
 .hamburgerContainer {
+    cursor: pointer;
     display: none;
     height: 45px;
     width: 50px;
-    /* display: flex;
+    display: none;
     flex-flow: column;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
 }
 
 .hamburger {
+    position: relative;
+    z-index: 10;
     width: 50%;
     height: 1px;
     margin: 3px 0;
@@ -61,6 +64,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.none {
+    display: none;
 }
 
 .mobileOverlay ul {
@@ -86,8 +92,5 @@
 
     .hamburgerContainer {
         display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
     }
 }
