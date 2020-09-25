@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import rocket from '../images/space_ship_icon.png'
 import axios from 'axios'
 export default function Home() {
   React.useEffect(() => {
@@ -13,11 +14,13 @@ export default function Home() {
   }, [])
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <h1>German Nunez</h1>
+      <div className={styles.landingHeading}>
+        <img src={rocket} alt="rocket blasting off icon"/>
+        <div>
+          <h2>Software Engineer</h2>
+          <p>Let's Make it Happen</p>
+        </div>
+      </div>
     </div>
   )
 }
