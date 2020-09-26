@@ -1,7 +1,9 @@
+import styles from '../styles/Footer.module.css'
+
 const Footer = () => {
     return (
-        <div>
-            <p>German Nunez 2020</p>
+        <div className={styles.footer}>
+            <p>&#169; German Nunez 2020</p>
         </div>
     )
 }

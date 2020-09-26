@@ -55,14 +55,55 @@ export default function Home() {
 
       <div className={styles.aboutMe}>
         <div>
-          <img src={headshot} className={styles.headshot} />
+          <img src={headshot} className={styles.headshot} alt="image of german nunez, software engineer"/>
         </div>
 
         <div>
           <h2>Let me help you build something</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <div>
+            Icons go here
+          </div>
         </div>
       </div>
+
+      <div className={styles.resumeSection}>
+        <button>Resume</button>
+      </div>
+
+      <div className={styles.employmentSection}>
+        {/* insert strapi data here for employment */}
+        <div>
+          <ul>
+            <li>Allen Eden</li>
+            <li>CK Collab</li>
+            <li>Luxury Line Car Rentals</li>
+            <li>LA Policy Food Council</li>
+            <li>Santa Monica Auto Body</li>
+            <li>K Dot G</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className={styles.projectSection}>
+        <div className={styles.projectCards}>
+          GERMAN IS COOL
+        </div>
+        <div className={styles.projectCards}>
+          GERMAN IS COOL
+        </div>
+        <div className={styles.projectCards}>
+          GERMAN IS COOL
+        </div>
+        <div className={styles.projectCards}>
+          GERMAN IS COOL
+        </div>
+        <div className={styles.projectCards}>
+          GERMAN IS COOL
+        </div>
+      </div>
+
     </div>
   )
 }

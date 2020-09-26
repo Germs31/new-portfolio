@@ -103,6 +103,48 @@
   object-fit: scale-down;
 }
 
+/* Resume */
+
+.resumeSection {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background: grey;
+}
+
+.resumeSection button {
+  padding: 15px;
+  width: 150px;
+  background: #222930;
+  color: #fff;
+  outline: none;
+}
+
+/* employment section */
+
+.employmentSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+/* Projects Section */
+
+.projectSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectCards {
+  margin: 15px;
+  padding: 25px;
+  height: 300px;
+  width: 300px;
+  background: grey;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
   .homeContainer{
