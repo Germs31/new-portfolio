@@ -52,13 +52,7 @@
   letter-spacing: .8rem;
   text-transform: uppercase;
 }
-.headshot {
-  margin: 0 150px;
-  height: 300px;
-  width: 300px;
-  border-radius:40% 60% 56% 44% / 33% 45% 55% 67% ;  
-  object-fit: cover;
-}
+
 /* Service Section */
 
 .services {
@@ -93,6 +87,20 @@
 
 .serviceIcon {
   font-size: 3rem;
+}
+
+/* About Me */
+
+.aboutMe {
+  display: flex;
+}
+
+.headshot {
+  margin: 0 150px;
+  height: 350px;
+  width: 350px;
+  border-radius:40% 60% 56% 44% / 33% 45% 55% 67% ;  
+  object-fit: scale-down;
 }
 
 /* Mobile */
