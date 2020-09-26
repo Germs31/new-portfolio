@@ -1,11 +1,28 @@
-.container {
+.homeContainer {
+  position: relative;
   height: 50vh;
+  background: #222930;
+  /* background: #3f4554; */
   width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
+
+/* .homeContainer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  z-index: -1;
+} */
 
 .landingHeading {
   display: flex;
@@ -41,4 +58,62 @@
   width: 300px;
   border-radius:40% 60% 56% 44% / 33% 45% 55% 67% ;  
   object-fit: cover;
+}
+/* Service Section */
+
+.services {
+  padding: 20px;
+  display: flex;
+}
+
+.serviceCard {
+  text-align: center;
+  position: relative;
+  top: -85px;
+  background: grey;
+  width: 35%;
+  border-radius: 10px;
+  margin: 12px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceCard h2 {
+  font-weight: 200;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+
+.serviceCard p {
+  font-weight: 300;
+  letter-spacing: 3px;
+  line-height: 20px;
+}
+
+.serviceIcon {
+  font-size: 3rem;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .homeContainer{
+    padding: 15px;
+  }
+
+  .landingHeading h2, .landingHeading p{
+    font-size: 1rem;
+  }
+
+  .landingHeading img {
+    width: 45%;
+  }
+
+  .services {
+    flex-flow: column;
+  }
+  .serviceCard {
+    width: 100%;
+    margin: 10px auto;
+  }
 }
