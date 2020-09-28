@@ -1,4 +1,15 @@
 .footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin: 0 10px;
+    font-size: 2rem;
 }
