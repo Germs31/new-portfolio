@@ -93,6 +93,7 @@
 
 .aboutMe {
   display: flex;
+  margin: 50px 0;
 }
 
 .headshot {
@@ -101,6 +102,35 @@
   width: 350px;
   border-radius:40% 60% 56% 44% / 33% 45% 55% 67% ;  
   object-fit: scale-down;
+}
+
+.aboutMeContent {
+  background: #fff;
+  color: #000;
+  margin: 0 60px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.aboutMeContent div {
+  margin: 45px 75px;
+}
+
+.aboutMeText p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.aboutMeText h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.smIcons {
+  font-size: 2rem;
 }
 
 /* Resume */
@@ -126,7 +156,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  width: 700px;
+  margin: 100px auto;
+  padding: 0px 10px 0px 50px;
+  border-left: 2px solid #fff;
+}
+
+.employmentSection p {
+  padding: 20px;
+  background: #34495e;
+  color: #ecf0f1;
+  font-family: tahoma;
+  line-height: 1.7;
+  position: relative;
+}
+
+.employmentSection p > span {
+  display: block;
+  padding: 5px 5px 10px 5px;
+  color: #7f8c8d;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.employmentSection p:before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #2ecc71;
+  top: -9px;
+  left: -61px;
+  position: absolute;
+}
+
+.employmentSection p:after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #34495e #34495e transparent       transparent ;
+  border-width: 15px;
+  position: absolute;
+  top: 0px;
+  left: -29px;
 }
 
 /* Projects Section */
