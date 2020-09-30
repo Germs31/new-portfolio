@@ -119,19 +119,16 @@ export default function Home() {
 
       <div className={styles.projectSection}>
         <div className={styles.projectCards}>
-          GERMAN IS COOL
-        </div>
-        <div className={styles.projectCards}>
-          GERMAN IS COOL
-        </div>
-        <div className={styles.projectCards}>
-          GERMAN IS COOL
-        </div>
-        <div className={styles.projectCards}>
-          GERMAN IS COOL
-        </div>
-        <div className={styles.projectCards}>
-          GERMAN IS COOL
+          <div className={styles.projectCardsContent}>
+            <h3>Pokedex</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias ab enim est consequatur, porro esse distinctio laborum saepe perferendis dicta perspiciatis repellendus tempore praesentium, quaerat inventore quas, eaque nisi!</p>
+            <img src={javascript} />
+            <img src={react} />
+            <div>
+              <button>Live</button>
+              <button>Github</button>
+            </div>
+          </div>
         </div>
       </div>
 

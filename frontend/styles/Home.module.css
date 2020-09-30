@@ -213,12 +213,20 @@
 }
 
 .projectCards {
-  margin: 15px;
-  padding: 25px;
-  height: 300px;
-  width: 300px;
-  background: grey;
+  height: 100%;
+  width: 50%;
+  background:url('../images/pokemon-hooks.png');
+  background-size: 79%;
+  display: flex;
+  justify-content: flex-end;
 }
+
+.projectCardsContent{
+  background: grey;
+  padding: 50px;
+  width: 50%;
+}
+
 
 /* Mobile */
 @media (max-width: 600px) {
