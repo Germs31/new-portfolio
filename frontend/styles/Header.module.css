@@ -82,6 +82,7 @@
 }
 
 @media (max-width: 600px) {
+    /* Heading */
     .header {
         justify-content: space-between;
     }

@@ -8,6 +8,7 @@ import {CgWebsite} from 'react-icons/cg'
 import {ImDatabase} from 'react-icons/im'
 import javascript from '../images/javascript.png'
 import react from '../images/react.png'
+import pokedex from '../images/pokemon-hooks.png'
 import mongodb from '../images/mongodb.png'
 import node from '../images/node.png'
 import sass from '../images/sass.png'
@@ -59,8 +60,8 @@ export default function Home() {
       </div>
 
       <div className={styles.aboutMe}>
-        <div>
-          <img src={headshot} className={styles.headshot} alt="image of german nunez, software engineer"/>
+        <div className={styles.headshot}>
+          <img src={headshot} alt="image of german nunez, software engineer"/>
         </div>
 
         <div className={styles.aboutMeContent}>
@@ -117,8 +118,56 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.projectSection}>
+      <div className={styles.projectSection}> 
         <div className={styles.projectCards}>
+          <div className={styles.projectImg}>
+            <img src={pokedex} />
+          </div>         
+          <div className={styles.projectCardsContent}>
+            <h3>Pokedex</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias ab enim est consequatur, porro esse distinctio laborum saepe perferendis dicta perspiciatis repellendus tempore praesentium, quaerat inventore quas, eaque nisi!</p>
+            <img src={javascript} />
+            <img src={react} />
+            <div>
+              <button>Live</button>
+              <button>Github</button>
+            </div>
+          </div>
+        </div>
+        <div className={styles.projectCards}>
+          <div className={styles.projectImg}>
+            <img src={pokedex} />
+          </div>         
+          <div className={styles.projectCardsContent}>
+            <h3>Pokedex</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias ab enim est consequatur, porro esse distinctio laborum saepe perferendis dicta perspiciatis repellendus tempore praesentium, quaerat inventore quas, eaque nisi!</p>
+            <img src={javascript} />
+            <img src={react} />
+            <div>
+              <button>Live</button>
+              <button>Github</button>
+            </div>
+          </div>
+        </div>
+        <div className={styles.projectCards}>
+          <div className={styles.projectImg}>
+            <img src={pokedex} />
+          </div>         
+          <div className={styles.projectCardsContent}>
+            <h3>Pokedex</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias ab enim est consequatur, porro esse distinctio laborum saepe perferendis dicta perspiciatis repellendus tempore praesentium, quaerat inventore quas, eaque nisi!</p>
+            <img src={javascript} />
+            <img src={react} />
+            <div>
+              <button>Live</button>
+              <button>Github</button>
+            </div>
+          </div>
+        </div>
+        <div className={styles.projectCards}>
+          <div className={styles.projectImg}>
+            <img src={pokedex} />
+          </div>         
           <div className={styles.projectCardsContent}>
             <h3>Pokedex</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error alias ab enim est consequatur, porro esse distinctio laborum saepe perferendis dicta perspiciatis repellendus tempore praesentium, quaerat inventore quas, eaque nisi!</p>

@@ -93,13 +93,15 @@
 
 .aboutMe {
   display: flex;
-  margin: 50px 0;
+  justify-content: center;
 }
 
 .headshot {
-  margin: 0 150px;
-  height: 350px;
-  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot img {
   border-radius:40% 60% 56% 44% / 33% 45% 55% 67% ;  
   object-fit: scale-down;
 }
@@ -213,18 +215,46 @@
 }
 
 .projectCards {
-  height: 100%;
-  width: 50%;
-  background:url('../images/pokemon-hooks.png');
-  background-size: 79%;
+  background: #fff;
   display: flex;
-  justify-content: flex-end;
+  width: 75%;
+  color: #000;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 25px 0;
 }
 
+/* .alt {
+  order: 1;
+} */
+
+
+.projectImg {
+  background: red;
+  position: relative;
+  top:-50px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+  border-radius: 10px
+}
+
+.projectCards:nth-child(even) .projectImg{
+  order: 1
+}
+
+.projectImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+
 .projectCardsContent{
-  background: grey;
-  padding: 50px;
-  width: 50%;
+  width: 100%;
+  padding: 35px;
 }
 
 
@@ -241,6 +271,7 @@
   .landingHeading img {
     width: 45%;
   }
+  /* Service */
 
   .services {
     flex-flow: column;
@@ -249,4 +280,19 @@
     width: 100%;
     margin: 10px auto;
   }
+
+  /* About Me */
+  .aboutMe {
+    flex-flow: column
+  }
+
+  .aboutMeContent {
+    padding: 0px;
+  }
+
+  /* Employment */
+  .employmentSection{
+    width: 100%;
+  }
+  /* Projects */
 }
